@@ -1,18 +1,19 @@
 *{
     padding: 0;    
     margin: 0;
+    box-sizing: border-box;
 }
-
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 #encCarrera{
     background-color: black;
     color: white;
     padding: 80px 60px;
 }
 
-body{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 #usoEm{
     font-size: 1.5rem;
@@ -24,4 +25,20 @@ body{
 
 div#encCarrera h3{
     font-weight: 100;
+}
+
+#secciones{
+    font-size: 0;
+}
+#secciones li{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 20%;
+}
+
+#secciones li a{
+    font-size: 16px;
+    padding:10px 15px;
+    display: block;
+    width: 100%;/*210px;*/
 }
