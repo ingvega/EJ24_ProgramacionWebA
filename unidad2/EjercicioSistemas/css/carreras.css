@@ -42,18 +42,25 @@ div#encCarrera h3{
 }
 
 #contenedor{
-    width: calc(100vw-14px);
-    height: 100vh;
+    /*Cuando trabajamos con el ancho de un contenedor es preferible usar %*/
+    /*width: calc(100vw-14px); */
+    width: 100%;
+    /*height: 100vh;*/
     background: gray;
     display: flex;
     flex-wrap: wrap;
 }
  #contenedor div{
     width: 50%;
-    height: 50%;
+    height: 50vh;
     /*display: inline-block;*/
  }
 
-#imgIzq,#imgDer{
+/*#imgIzq,#imgDer{*/
+#imgOE,#imgAE{
     background-image: url(../imgs/objetivos.jpg);
+}
+
+#imgPE{
+    background-image: url(../imgs/egreso.png);
 }
