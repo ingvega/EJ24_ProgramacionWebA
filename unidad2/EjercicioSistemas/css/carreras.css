@@ -13,8 +13,6 @@ body{
     padding: 80px 60px;
 }
 
-
-
 #usoEm{
     font-size: 1.5rem;
 }
@@ -41,4 +39,21 @@ div#encCarrera h3{
     padding:10px 15px;
     display: block;
     width: 100%;/*210px;*/
+}
+
+#contenedor{
+    width: calc(100vw-14px);
+    height: 100vh;
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+ #contenedor div{
+    width: 50%;
+    height: 50%;
+    /*display: inline-block;*/
+ }
+
+#imgIzq,#imgDer{
+    background-image: url(../imgs/objetivos.jpg);
 }
