@@ -1,0 +1,46 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+#cu {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#cu div{
+    border:1px solid black;
+    height: 100px;
+     /*width: 50px;*/
+}
+
+.t4 {
+    width: 40%;
+}
+#cu > div:last-child{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+}
+
+#cu > div:last-child div:first-child{
+    width: 10%;
+
+}
+
+#cu > div:last-child div:last-child{
+    width: 60%;
+
+}
+
+#cu > div:nth-child(2){
+    width: 20%;
+}
+
+#cu div:nth-child(4){
+    width: 60%;
+}
+#cu div:nth-child(2n+1){
+    background-color:aquamarine;
+}
