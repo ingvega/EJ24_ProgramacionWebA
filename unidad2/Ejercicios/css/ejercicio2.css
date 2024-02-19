@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid black;
+}
+#contenedor{
+    display: flex;
+    height: 50vh;
+}
+
+#contenedor > div{
+    width: 50%;
+}
+
+#izq div{
+    width: 33%;
+    height: 33%;
+}
+
+#izq div:nth-child(2){
+    margin: 0 auto;
+}
+#izq div:nth-child(3){
+    margin-left: auto;
+}
