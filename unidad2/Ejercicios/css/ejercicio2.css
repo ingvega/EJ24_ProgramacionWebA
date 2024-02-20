@@ -16,9 +16,9 @@ div{
     width: 50%;
 }
 
-#izq div{
-    width: 33%;
-    height: 33%;
+#izq div,#der div{
+    width: 33.33%;
+    height: 33.33%;
 }
 
 #izq div:nth-child(2){
@@ -26,4 +26,33 @@ div{
 }
 #izq div:nth-child(3){
     margin-left: auto;
+}
+#der {
+   display: flex; 
+   /*align-items: center;
+   justify-content: center;*/
+}
+
+#der div:nth-child(2){
+    align-self: center;
+}
+#der div:first-child{
+    align-self: flex-end;
+}
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: space-between;
+}
+
+#footer div{
+    width: 40%;
+    height: 100px;
+}
+
+#footer div:last-child{
+    height: 300px;
+    margin: 0 auto;
 }

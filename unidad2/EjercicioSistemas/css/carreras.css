@@ -64,3 +64,21 @@ div#encCarrera h3{
 #imgPE{
     background-image: url(../imgs/egreso.png);
 }
+
+#contacto{
+    display: flex;
+    justify-content: center;
+}
+
+#contacto > div{
+    display: flex;
+    padding: 1em;
+    border-right: 1px solid gainsboro;
+}
+#contacto > div:last-child{
+    border-right: none;
+}
+#contacto div div{
+    padding: 1em .5em;
+}
+
