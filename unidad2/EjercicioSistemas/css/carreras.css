@@ -1,47 +1,74 @@
-*{
-    padding: 0;    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
-#encCarrera{
+
+#encCarrera {
     background-color: black;
+    background-image: url(../imgs/banner.jpg);
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 80px 60px;
+    /*height: calc(100vw * 9 / 16);*/
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-#usoEm{
+#encCarrera h1 {
+    font-size: 4em;
+}
+
+#encCarrera h2 {
+    font-size: 3em;
+}
+
+#encCarrera h3 {
+    font-size: 2em;
+}
+
+#usoEm {
     font-size: 1.5rem;
 }
 
-#usoEm div{
+#usoEm div {
     font-size: 1.5rem;
 }
 
-div#encCarrera h3{
+div#encCarrera h3 {
     font-weight: 100;
 }
 
-#secciones{
+#secciones {
     font-size: 0;
 }
-#secciones li{
+
+#secciones li {
     display: inline-block;
     border: 1px solid #000;
     width: 20%;
 }
 
-#secciones li a{
+#secciones li a {
     font-size: 16px;
-    padding:10px 15px;
+    padding: 10px 15px;
     display: block;
-    width: 100%;/*210px;*/
+    width: 100%;
+    /*210px;*/
 }
 
-#contenedor{
+#contenedor {
     /*Cuando trabajamos con el ancho de un contenedor es preferible usar %*/
     /*width: calc(100vw-14px); */
     width: 100%;
@@ -50,22 +77,24 @@ div#encCarrera h3{
     display: flex;
     flex-wrap: wrap;
 }
- #contenedor div{
+
+#contenedor div {
     width: 50%;
     height: 50vh;
     /*display: inline-block;*/
- }
+}
 
 /*#imgIzq,#imgDer{*/
-#imgOE,#imgAE{
+#imgOE,
+#imgAE {
     background-image: url(../imgs/objetivos.jpg);
 }
 
-#imgPE{
+#imgPE {
     background-image: url(../imgs/egreso.png);
 }
 
-img{
+img {
     /*Aplica 5px de redondeo a todas las esquinas*/
     border-radius: 5px;
     /*Redondea todo lo posible un contenedor dejandolo circular u ovalado*/
@@ -73,30 +102,34 @@ img{
     /*Redondea a partir de la esquina sup izq en sentido de las manecillas del reloj*/
     border-radius: 5px 50% 15px 20%;
 }
-#contacto{
+
+#contacto {
     display: flex;
     justify-content: center;
-    color:white;
+    color: white;
     width: 90%;
     margin: 20px auto;
     /*border-radius: 7px;*/
 }
 
-#contacto > div{
+#contacto>div {
     display: flex;
     padding: 1em;
     background-color: navy;
     border-right: 1px solid gainsboro;
 }
-#contacto > div:first-child{
+
+#contacto>div:first-child {
     border-radius: 7px 0 0 7px;
     /*border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;*/
 }
-#contacto > div:last-child{
+
+#contacto>div:last-child {
     border-radius: 0 7px 7px 0;
     border-right: none;
 }
-#contacto div div{
+
+#contacto div div {
     padding: 1em .5em;
 }
