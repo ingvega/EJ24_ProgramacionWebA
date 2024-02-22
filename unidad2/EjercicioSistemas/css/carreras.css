@@ -65,20 +65,38 @@ div#encCarrera h3{
     background-image: url(../imgs/egreso.png);
 }
 
+img{
+    /*Aplica 5px de redondeo a todas las esquinas*/
+    border-radius: 5px;
+    /*Redondea todo lo posible un contenedor dejandolo circular u ovalado*/
+    border-radius: 50%;
+    /*Redondea a partir de la esquina sup izq en sentido de las manecillas del reloj*/
+    border-radius: 5px 50% 15px 20%;
+}
 #contacto{
     display: flex;
     justify-content: center;
+    color:white;
+    width: 90%;
+    margin: 20px auto;
+    /*border-radius: 7px;*/
 }
 
 #contacto > div{
     display: flex;
     padding: 1em;
+    background-color: navy;
     border-right: 1px solid gainsboro;
 }
+#contacto > div:first-child{
+    border-radius: 7px 0 0 7px;
+    /*border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;*/
+}
 #contacto > div:last-child{
+    border-radius: 0 7px 7px 0;
     border-right: none;
 }
 #contacto div div{
     padding: 1em .5em;
 }
-
