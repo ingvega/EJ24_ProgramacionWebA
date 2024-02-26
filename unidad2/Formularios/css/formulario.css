@@ -58,8 +58,41 @@ form{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    background-color: gainsboro;
 }
 
 label{
     display: block;
+}
+
+/*input[type=text],input[type=password]{*/
+input{
+    padding: 5px 10px;
+    /*border-radius: 5px;*/
+    border: none;
+    border-bottom: 5px solid rgb(38, 96, 232);
+    outline:none;
+}
+
+input:hover{
+    border-bottom-color:rgb(38, 187, 232);
+}
+
+input:focus{
+    background-color: rgba(0, 242, 255, 0.296);
+    background-image: url(../imgs/circulo.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 30px;
+}
+
+/*colocar el estado de validación en los input*/
+
+input:valid{
+    border-bottom-color:rgb(10, 195, 75);
+}
+
+input:invalid{
+    border-bottom-color:rgb(210, 12, 12);
 }
