@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
     <title>Document</title>
 </head>
 <body>
-    <center>
+    
         <form action="procecesarFormulario.html" autocomplete="off">
             <!--etiquetas-->
-            <div>
+            <div class="col-6">
                 <!--atributo for indica el id del control de entrada de datos
                 con el que se relaciona-->
                 <label for="txtUsuario">Usuario</label>
@@ -19,22 +20,22 @@
                     placeholder="Coloca tu nombre de usuario" required
                     maxlength="50" minlength="1" name="txtUsuario">
             </div>
-            <div>
+            <div class="col-6">
                 <label for="txtPassword">Contraseña</label>
                 <input type="password" id="txtPassword"
                 placeholder="Ingresa tu clave de acceso"
                 required maxlength="50" minlength="1">
             </div>
-            <div>
+            <div class="col-4">
                 <label for="txtEdad">Edad</label>
                 <input type="number" id="txtEdad" value="18" required max="120" 
                 min="18" step="1">
             </div>
-            <div>
+            <div class="col-4">
                 <label for="txtCP">Código postal</label>
                 <input type="text" id="txtCP" required pattern="[0-9]{5}">
             </div>
-            <div>
+            <div class="col-4">
                 <label for="txtTelefono">Telefono</label>
                 <input type="tel" id="txtTelefono" required>
             </div>
@@ -106,6 +107,6 @@
             </tr>
         </table>
         <h4>La etiqueta &lt;input&gt; puede contener un atributo llamado autofocus que permite colocar el enfoque en este control al cargar la página</h4>
-    </center>
+    
 </body>
 </html>
