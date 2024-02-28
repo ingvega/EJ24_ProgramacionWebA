@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/formulario.css">
+    
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a><i class="fa-solid fa-cookie"></i></a></li>
+            <li><a>Inicio</a></li>
+            <li><a>Gestión</a>
+                <ul>
+                    <li><a href="">Usuarios</a></li>
+                    <li><a href="">Productos</a></li>
+                </ul>
+            </li>
+            <li><a>Contacto</a></li>
+        </ul>
+        <form action="">
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Contraseña">
+            <button class="btn-success"><i class="fa-solid fa-circle-check"></i>
+                Iniciar Sesión
+            </button>
+        </form>
+    </nav>
     
         <form action="procecesarFormulario.html" autocomplete="off">
             <!--etiquetas-->
@@ -107,6 +129,6 @@
             </tr>
         </table>
         <h4>La etiqueta &lt;input&gt; puede contener un atributo llamado autofocus que permite colocar el enfoque en este control al cargar la página</h4>
-    
+    <script src="js/all.min.js"></script>
 </body>
 </html>

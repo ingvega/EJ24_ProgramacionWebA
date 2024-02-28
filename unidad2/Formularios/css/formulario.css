@@ -52,8 +52,47 @@
     width: 100%;
 }
 
+nav{
+    display: flex;
+    background-color: palevioletred;
+    color: #fff;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
 
-form{
+nav > ul > li:first-child a{
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav > ul li:hover{
+    background-color: rgb(177, 51, 93);
+}
+
+nav a{
+    display: block;
+    padding: 1rem 1.3rem;
+}
+
+nav form{
+    padding-right: 1.5rem;
+}
+
+
+.btn-success{
+    padding: 6px 10px;
+    background-color: rgb(177, 51, 93);
+    color: #fff;
+    border: 1px solid  rgb(146, 39, 75);
+    border-radius: 5px;
+}
+
+body > form{
     margin: 0 auto;
     width: 90%;
     display: flex;
@@ -89,10 +128,10 @@ input:focus{
 
 /*colocar el estado de validación en los input*/
 
-input:valid{
+.validado input:valid{
     border-bottom-color:rgb(10, 195, 75);
 }
 
-input:invalid{
+.validado input:invalid{
     border-bottom-color:rgb(210, 12, 12);
 }
