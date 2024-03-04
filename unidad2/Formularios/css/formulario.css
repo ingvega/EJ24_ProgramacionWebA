@@ -59,6 +59,9 @@ nav{
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -65px;
 }
 
 nav > ul > li:first-child a{
@@ -70,17 +73,37 @@ nav ul{
     list-style: none;
 }
 
-nav > ul li:hover{
-    background-color: rgb(177, 51, 93);
+nav > ul li:hover > a{
+    color: rgb(177, 51, 93);
+    background-color: #fff;
 }
 
 nav a{
     display: block;
     padding: 1rem 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 
 nav form{
     padding-right: 1.5rem;
+}
+
+nav li ul{
+    /*Oculta un elemento sin liberar el espacio*/
+    /*visibility: hidden;*/
+    /*Aplica un nivel de opacidad a un elemento sin liberar el espacio*/
+    /*opacity: .25;*/
+    /*Oculta un elemento y libera el espacio*/
+    display: none;
+    position: absolute;
+    flex-direction: column;
+}
+
+nav li:hover ul{
+    display: flex;
+    background-color: rgb(177, 51, 93);
 }
 
 
@@ -92,7 +115,11 @@ nav form{
     border-radius: 5px;
 }
 
-body > form{
+main{
+    margin-top: 65px;
+}
+
+main > form{
     margin: 0 auto;
     width: 90%;
     display: flex;
