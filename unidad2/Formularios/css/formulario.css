@@ -52,61 +52,6 @@
     width: 100%;
 }
 
-nav{
-    display: flex;
-    background-color: palevioletred;
-    color: #fff;
-    font-weight: bold;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    margin-top: -65px;
-}
-
-nav > ul > li:first-child a{
-    font-size: 2rem;
-    padding: 0.5rem 2rem;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-}
-
-nav > ul li:hover > a{
-    color: rgb(177, 51, 93);
-    background-color: #fff;
-}
-
-nav a{
-    display: block;
-    padding: 1rem 1.3rem;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-}
-
-nav form{
-    padding-right: 1.5rem;
-}
-
-nav li ul{
-    /*Oculta un elemento sin liberar el espacio*/
-    /*visibility: hidden;*/
-    /*Aplica un nivel de opacidad a un elemento sin liberar el espacio*/
-    /*opacity: .25;*/
-    /*Oculta un elemento y libera el espacio*/
-    display: none;
-    position: absolute;
-    flex-direction: column;
-}
-
-nav li:hover ul{
-    display: flex;
-    background-color: rgb(177, 51, 93);
-}
-
-
 .btn-success{
     padding: 6px 10px;
     background-color: rgb(177, 51, 93);
@@ -117,6 +62,7 @@ nav li:hover ul{
 
 main{
     margin-top: 65px;
+    padding: 0 2rem;
 }
 
 main > form{
@@ -124,7 +70,12 @@ main > form{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    background-color: gainsboro;
+    background-color: rgb(236, 236, 236);
+    padding: 1rem;
+}
+
+main > form div{
+    margin-bottom: 1rem;
 }
 
 label{
@@ -141,24 +92,45 @@ input{
 }
 
 input:hover{
-    border-bottom-color:rgb(38, 187, 232);
+    border-bottom-color:rgb(204, 237, 248);
 }
 
 input:focus{
     background-color: rgba(0, 242, 255, 0.296);
-    background-image: url(../imgs/circulo.jpg);
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding-left: 30px;
 }
 
 /*colocar el estado de validación en los input*/
 
+.validado input:valid,
+.validado input:invalid{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 35px;
+}
+
 .validado input:valid{
     border-bottom-color:rgb(10, 195, 75);
+    background-image: url(../imgs/check.png);
 }
 
 .validado input:invalid{
     border-bottom-color:rgb(210, 12, 12);
+    background-image: url(../imgs/x.png);
+}
+
+table{
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+table thead tr{
+    background: #000;
+    color: white;
+}
+
+table td, table th{
+    padding: 0.5rem 1rem;
+    border: none;
+    border: 1px solid rgb(203, 203, 203);
 }

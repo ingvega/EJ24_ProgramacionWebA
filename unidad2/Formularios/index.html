@@ -10,28 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a><i class="fa-solid fa-cookie"></i></a></li>
-                <li><a>Inicio</a></li>
-                <li><a>Gestión</a>
-                    <ul>
-                        <li><a href="">Usuarios</a></li>
-                        <li><a href="">Productos</a></li>
-                    </ul>
-                </li>
-                <li><a>Contacto</a></li>
-            </ul>
-            <form action="">
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <button class="btn-success"><i class="fa-solid fa-circle-check"></i>
-                    Iniciar Sesión
-                </button>
-            </form>
-        </nav>
-    </header>
+    
     <main>
         <form action="procecesarFormulario.html" autocomplete="off">
             <!--etiquetas-->
@@ -63,11 +42,11 @@
                 <label for="txtTelefono">Telefono</label>
                 <input type="tel" id="txtTelefono" required>
             </div>
-            <div>
+            <div class="col-4">
                 <label for="txtFechaNac">Fecha de nacimiento</label>
                 <input type="date" id="txtFechaNac" required>
             </div>
-            <div>
+            <div class="col-4">
                 Género<br>    
                 <label>
                     <input type="radio" name="genero" 
@@ -93,19 +72,23 @@
                 </select>
             </div>
             <!--botones-->
-            <button type="submit">Registrar</button>
+            <div class="col-12">
+                <button type="submit">Registrar</button>
+            </div>
             
             <!--cajas de texto extendidas-->
             <!--casillas de verificación-->
             <!--botones de opción-->
 
         </form>
-        <table border>
-            <tr>
-                <th colspan="2"></th>
-                <th>Nombre</th>
-                <th>Diámetro</th>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th>Nombre</th>
+                    <th>Diámetro</th>
+                </tr>
+            </thead>
             <tr>
                 <td colspan="2" rowspan="4">Planetas terrestres</td>
                 <th>&nbsp;&nbsp;&nbsp;&nbsp;Mer&nbsp;&nbsp;&nbsp;curio&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -125,18 +108,16 @@
             </tr>
             <tr>
                 <td colspan="4">&nbsp;</td>
-            </tr>
-            <tr>
-                <td></td>
             </tr>
         </table>
-
-        <table border>
-            <tr>
-                <th colspan="2"></th>
-                <th>Nombre</th>
-                <th>Diámetro</th>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th>Nombre</th>
+                    <th>Diámetro</th>
+                </tr>
+            </thead>
             <tr>
                 <td colspan="2" rowspan="4">Planetas terrestres</td>
                 <th>&nbsp;&nbsp;&nbsp;&nbsp;Mer&nbsp;&nbsp;&nbsp;curio&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -156,18 +137,16 @@
             </tr>
             <tr>
                 <td colspan="4">&nbsp;</td>
-            </tr>
-            <tr>
-                <td></td>
             </tr>
         </table>
-
-        <table border>
-            <tr>
-                <th colspan="2"></th>
-                <th>Nombre</th>
-                <th>Diámetro</th>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th>Nombre</th>
+                    <th>Diámetro</th>
+                </tr>
+            </thead>
             <tr>
                 <td colspan="2" rowspan="4">Planetas terrestres</td>
                 <th>&nbsp;&nbsp;&nbsp;&nbsp;Mer&nbsp;&nbsp;&nbsp;curio&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -187,18 +166,16 @@
             </tr>
             <tr>
                 <td colspan="4">&nbsp;</td>
-            </tr>
-            <tr>
-                <td></td>
             </tr>
         </table>
-
-        <table border>
-            <tr>
-                <th colspan="2"></th>
-                <th>Nombre</th>
-                <th>Diámetro</th>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th>Nombre</th>
+                    <th>Diámetro</th>
+                </tr>
+            </thead>
             <tr>
                 <td colspan="2" rowspan="4">Planetas terrestres</td>
                 <th>&nbsp;&nbsp;&nbsp;&nbsp;Mer&nbsp;&nbsp;&nbsp;curio&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -218,18 +195,16 @@
             </tr>
             <tr>
                 <td colspan="4">&nbsp;</td>
-            </tr>
-            <tr>
-                <td></td>
             </tr>
         </table>
-
-        <table border>
-            <tr>
-                <th colspan="2"></th>
-                <th>Nombre</th>
-                <th>Diámetro</th>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th>Nombre</th>
+                    <th>Diámetro</th>
+                </tr>
+            </thead>
             <tr>
                 <td colspan="2" rowspan="4">Planetas terrestres</td>
                 <th>&nbsp;&nbsp;&nbsp;&nbsp;Mer&nbsp;&nbsp;&nbsp;curio&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -249,9 +224,6 @@
             </tr>
             <tr>
                 <td colspan="4">&nbsp;</td>
-            </tr>
-            <tr>
-                <td></td>
             </tr>
         </table>
         <h4>La etiqueta &lt;input&gt; puede contener un atributo llamado autofocus que permite colocar el enfoque en este control al cargar la página</h4>

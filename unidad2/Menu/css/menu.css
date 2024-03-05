@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    margin-top: -3.5rem; 
+    box-shadow: 2px 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+nav{
+    display: flex;
+    background-color: palevioletred;
+    color: #fff;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul > li:first-child a{
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    height: 3rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav > ul li:hover > a{
+    color: rgb(177, 51, 93);
+    background-color: #fff;
+}
+
+nav a{
+    display: block;
+    padding: 1rem 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav form{
+    padding-right: 1.5rem;
+}
+
+nav li ul{
+    /*Oculta un elemento sin liberar el espacio*/
+    /*visibility: hidden;*/
+    /*Aplica un nivel de opacidad a un elemento sin liberar el espacio*/
+    /*opacity: .25;*/
+    /*Oculta un elemento y libera el espacio*/
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    box-shadow: 2px 2px 3px 0 rgb(177, 51, 93,.5);
+}
+
+nav li:hover ul{
+    display: flex;
+    background-color: rgb(177, 51, 93);
+}
+
+
+.btn-success{
+    padding: .7rem .6rem;
+    background-color: rgb(177, 51, 93);
+    color: #fff;
+    border: 1px solid  rgb(146, 39, 75);
+    border-radius: 5px;
+}
+
+main{
+    /*Colocar margen suficiente para el contenido de la página
+    debido al "defecto" causado por el posicionamiento fijo del menú*/
+    margin-top: 3.5rem;
+    min-height: calc(100vh - 8.5rem);
+}
+
+input:not([type=checkbox],[type=radio]){
+    padding: .5rem;
+    border: none;
+    border-bottom: 5px solid rgb(146, 39, 75);
+    outline: none;
+}
+
+.go-top a{
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 3rem;
+    background-color: rgb(239, 77, 131);
+    color: black;
+    
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.go-top:hover a{
+    cursor: pointer;
+    background-color: rgb(146, 39, 75);
+    color: white;
+}
+
+footer{
+    border-top:5px solid palevioletred;
+    height: 5rem;
+}
+
+
