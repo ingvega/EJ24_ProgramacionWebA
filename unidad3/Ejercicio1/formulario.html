@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <label for="">
+            num 1
+            <input type="text" id="num1">
+        </label>
+        <label for="">
+            num 2
+            <input type="text" id="num2" value="0">
+        </label>
+        <label for="">
+            resultado:
+            <span id="resultado"></span>
+        </label>
+        <input type="button" id="sumar" onclick="sumar()" value="sumar">
+        <input type="button" id="restar" onclick="restar()" value="restar">
+    </form>
+    <script>
+        function sumar(){
+            let n1=document.getElementById('num1').value;
+            let n2=document.querySelector('#num2').value;
+            let resultado=n1+n2;
+            document.getElementById("resultado").innerText=resultado;
+        }
+    </script>
+</body>
+</html>
