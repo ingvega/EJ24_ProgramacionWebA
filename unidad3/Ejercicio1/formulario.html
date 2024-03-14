@@ -11,25 +11,64 @@
     <form action="">
         <label for="">
             num 1
-            <input type="text" id="num1">
+            <input type="number" id="num1">
         </label>
         <label for="">
             num 2
-            <input type="text" id="num2" value="0">
+            <input type="number" id="num2" value="0">
         </label>
         <label for="">
             resultado:
             <span id="resultado"></span>
         </label>
-        <input type="button" id="sumar" onclick="sumar()" value="sumar">
-        <input type="button" id="restar" onclick="restar()" value="restar">
+        <input type="button" id="btnSumar" onclick="sumar(this)//;alert('otra cosa')" value="sumar">
+        <input type="button" id="btnRestar" value="restar">
+        <input type="button" id="btnDividir" value="Dividir">
     </form>
     <script>
-        function sumar(){
-            let n1=document.getElementById('num1').value;
-            let n2=document.querySelector('#num2').value;
+        let btnRestar=document.getElementById("btnRestar");
+        btnRestar.addEventListener('click',restar);
+        let btnDividir=document.getElementById("btnDividir");
+        //btnDividir.addEventListener("click",function(){
+        btnDividir.addEventListener("click",e=>{
+            //console.log(e);
+            //e.target.disabled=true;
+            ocultar(e.target);
+            let n1=parseFloat(document.getElementById('num1').value);
+            let n2=parseFloat(document.querySelector('#num2').value);
+            let resultado=n1/n2;
+            document.getElementById("resultado").innerText=resultado;
+        });
+        /*console.log(btnRestar);
+        console.log(btnDividir);*/
+
+
+
+        function sumar(btn){
+            //console.log(btn);
+            //btn.disabled=true;
+            ocultar(btn);
+            let n1=parseFloat(document.getElementById('num1').value);
+            let n2=parseFloat(document.querySelector('#num2').value);
             let resultado=n1+n2;
             document.getElementById("resultado").innerText=resultado;
+        }
+
+        function restar(e){
+            //console.log(e);
+            //e.target.disabled=true;
+            ocultar(e.target);
+            let n1=parseFloat(document.getElementById('num1').value);
+            let n2=parseFloat(document.querySelector('#num2').value);
+            let resultado=n1-n2;
+            document.getElementById("resultado").innerText=resultado;
+        }
+
+        function ocultar(btn){
+            btn.style.visibility='hidden';
+            /*btn.style.display='none';
+            btn.style.opacity='0';*/
+            //btn.style.marginBottom
         }
     </script>
 </body>
