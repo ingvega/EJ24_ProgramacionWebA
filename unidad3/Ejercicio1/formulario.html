@@ -65,10 +65,16 @@
         }
 
         function ocultar(btn){
-            btn.style.visibility='hidden';
+            //btn.disabled=true;
+            //Error de sintaxis
+            //btn.style.background-color="red";
+            //Propiedades que incluyan guión medio deben usar Camel Case
+            //btn.style.backgroundColor="red";
+            //btn.style.visibility='hidden';
             /*btn.style.display='none';
             btn.style.opacity='0';*/
             //btn.style.marginBottom
+            btn.remove();
         }
     </script>
 </body>

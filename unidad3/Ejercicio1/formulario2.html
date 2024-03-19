@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <label for="">
+            num 1
+            <input type="number" id="num1">
+        </label>
+        <label for="">
+            num 2
+            <input type="number" id="num2" value="0">
+        </label>
+        <select id="cboOperacion">
+            <option value="0">Selecciona una operacion</option>
+            <option value="1">Sumar</option>
+            <option value="2">Restar</option>
+            <option value="3">Multiplicar</option>
+            <option value="4">Dividir</option>
+        </select>
+
+        <button type="button" id="btnCalcular">Calcular</button>
+    </form>
+    <table id="tblResultados">
+        <thead>
+            <tr>
+                <th>Operación</th>
+                <th>Detalle</th>
+                <th>resultado</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/funcionalidad.js">
+    </script>
+</body>
+</html>
