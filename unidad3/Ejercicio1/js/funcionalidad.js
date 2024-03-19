@@ -12,11 +12,13 @@ document.addEventListener("DOMContentLoaded",function(){
     btn.addEventListener("click",function(){
         let n1=parseFloat(document.getElementById("num1").value);
         let n2=parseFloat(document.getElementById("num2").value);
-        let operacion=document.getElementById("cboOperacion").value;
+        let combo=document.getElementById("cboOperacion");
+        let operacion=parseInt(combo.value);
         let resultado;
         let strOperacion;        
         let ope;
         let fila;
+        debugger;
         switch (operacion) {
             case 1:
                 strOperacion=`${n1}+${n2}`;
@@ -34,8 +36,25 @@ document.addEventListener("DOMContentLoaded",function(){
                 break;
         }
         resultado=eval(strOperacion);
-        fila=`<tr><td>Suma</td><td>${strOperacion}</td><td>${resultado}</td></tr>`;
+        fila=document.createElement("tr");
+        let celda=document.createElement("td");
+        let contenido=document.createTextNode(combo.selectedOptions[0].innerText);
+        celda.appendChild(contenido);
+        fila.appendChild(celda);
+
+        celda=document.createElement("td");
+        contenido=document.createTextNode(strOperacion);
+        celda.appendChild(contenido);
+        fila.appendChild(celda);
+
+        celda=document.createElement("td");
+        contenido=document.createTextNode(resultado);
+        celda.appendChild(contenido);
+        fila.appendChild(celda);
+        
         let tbody=document.querySelector("#tblResultados tbody");
-        tbody.innerHTML+=fila;        
+        tbody.appendChild(fila);
+        /*fila=`<tr><td>${combo.selectedOptions[0].innerText}</td><td>${strOperacion}</td><td>${resultado}</td></tr>`;
+        tbody.innerHTML+=fila;        */
     });
 });
