@@ -9,17 +9,14 @@
 //Añadir los eventos cuando el DOM ya está listo
 document.addEventListener("DOMContentLoaded",function(){
     var btn=document.getElementById("btnCalcular");
-    btn.addEventListener("click",function(args){
-        
+    btn.addEventListener("click",function(){
         let txtN1=document.getElementById("num1");
         let txtN2=document.getElementById("num2");
         let combo=document.getElementById("cboOperacion");
-        txtN2.setCustomValidity("");
-        combo.setCustomValidity("");
+        
         debugger;
-        if(combo.value==0){
-            combo.setCustomValidity("Selecciona una operación");
-            //alert("Indica la operación");
+        if(!(txtN1.value && txtN2.value && combo.value!=0)){
+            alert("completa los datos");
             return;
         }
         let n1=parseFloat(txtN1.value);
@@ -43,7 +40,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 if(txtN2.value!=0)
                     strOperacion=`${n1}/${n2}`;
                 else{
-                    txtN2.setCustomValidity("Valor no válido para la división");
+                    alert("El segundo operando no puede ser cero");
                     return;
                 }
                 break;
@@ -71,6 +68,5 @@ document.addEventListener("DOMContentLoaded",function(){
         tbody.appendChild(fila);
         /*fila=`<tr><td>${combo.selectedOptions[0].innerText}</td><td>${strOperacion}</td><td>${resultado}</td></tr>`;
         tbody.innerHTML+=fila;        */
-        args.preventDefault();
     });
 });

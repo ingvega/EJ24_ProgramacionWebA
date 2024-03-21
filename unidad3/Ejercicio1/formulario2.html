@@ -11,13 +11,13 @@
     <form action="">
         <label for="">
             num 1
-            <input type="number" id="num1">
+            <input type="number" id="num1" required>
         </label>
         <label for="">
             num 2
-            <input type="number" id="num2" value="0">
+            <input type="number" id="num2" value="0" required>
         </label>
-        <select id="cboOperacion">
+        <select id="cboOperacion" required>
             <option value="0">Selecciona una operacion</option>
             <option value="1">Sumar</option>
             <option value="2">Restar</option>
@@ -25,7 +25,7 @@
             <option value="4">Dividir</option>
         </select>
 
-        <button type="button" id="btnCalcular">Calcular</button>
+        <button type="submit" id="btnCalcular">Calcular</button>
     </form>
     <table id="tblResultados">
         <thead>
