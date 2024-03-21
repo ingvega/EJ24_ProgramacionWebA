@@ -1,0 +1,54 @@
+:root{
+    --fondo:#d87093;
+    --fondo-resalte:#90415c;
+    --fondo-resalte2:#862d4d;
+}
+.bg-pink{
+    background-color:var(--fondo);
+}
+
+nav .form-control{
+    border-radius: 0;
+    border:none;
+    border-bottom: 5px solid var(--fondo-resalte);
+}
+
+nav .dropdown-item:hover {
+    color: white;
+    background-color: var(--fondo-resalte);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+#carouselExampleAutoplaying{
+    height: calc(100vh - 3rem);
+}
+
+#carouselExampleAutoplaying img{
+    height: calc(100vh - 3rem);
+}
+
+.btn-pink{
+    background-color: var(--fondo-resalte);
+    color: white;
+}
+
+.btn-pink:hover{
+    background-color: var(--fondo-resalte2);
+    color: white;
+}
+
+.featurette-divider{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    min-height: calc(100vh - 11rem);
+}
+
+footer{
+    border-top: 5px solid var(--fondo);
+}
