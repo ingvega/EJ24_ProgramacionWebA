@@ -10,7 +10,14 @@
 document.addEventListener("DOMContentLoaded",function(){
     var btn=document.getElementById("btnCalcular");
     btn.addEventListener("click",function(args){
-        
+        //Colocar la clase validado en el form
+        //document.getElementsByTagName("form")[0]
+        //asigna el atributo class, de modo que si ya tenía más clases, las reemplaza
+        //document.querySelector("form").className="validado";
+
+        //asigna el atributo class, de modo que si ya tenía más clases, las reemplaza
+        document.querySelector("form").classList.add("validado");
+
         let txtN1=document.getElementById("num1");
         let txtN2=document.getElementById("num2");
         let combo=document.getElementById("cboOperacion");
